@@ -36,7 +36,7 @@
 
     //add new poll
     if (valid) {
-      let poll = { ...fields, voteA: 0, voteB: 0, id: Math.random() };
+      let poll = { ...fields, id: Math.random(), votesA: 0, votesB: 0 };
       dispatch('add', poll);
     }
   };
